@@ -1,0 +1,28 @@
+<h1>Add a Breed</h1>
+
+
+<%= form_with scope: :dog, url: dogs_path, local: true do |form| %>
+  <p>
+    <%= form.label :breed %><br>
+    <%= form.text_field :breed %>
+  </p>
+ 
+  <p>
+    <%= form.label :size %><br>
+    <%= form.text_area :size %>
+  </p>
+
+  <p>
+    <%= form.label :group %><br>
+    <%= form.text_area :group %>
+  </p>
+
+  <p>
+    <%= form.label :best_suited_for %><br>
+    <%= form.text_area :best_suited_for %>
+  </p>
+ 
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>

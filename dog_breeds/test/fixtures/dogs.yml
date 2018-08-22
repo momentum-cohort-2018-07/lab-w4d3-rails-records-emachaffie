@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  breed: MyString
+  size: MyString
+  group: MyString
+  best_suited_for: MyString
+
+two:
+  breed: MyString
+  size: MyString
+  group: MyString
+  best_suited_for: MyString
