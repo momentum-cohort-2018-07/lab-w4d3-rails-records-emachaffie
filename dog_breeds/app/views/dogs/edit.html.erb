@@ -1,7 +1,7 @@
-<h1>Add a Breed</h1>
+<h1>Edit a Breed</h1>
 
 
-<%= form_with scope: :dog, url: dogs_path, local: true do |form| %>
+<%= form_with model: @dog, local: true do |form| %>
   <p>
     <%= form.label :breed %><br>
     <%= form.text_field :breed %>

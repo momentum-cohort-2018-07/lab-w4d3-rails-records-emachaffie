@@ -17,6 +17,10 @@
       <td><%= dog.group %></td>
       <td><%= dog.best_suited_for %></td>
       <td><%= link_to 'Show', dog_path(dog) %></td>
+      <td><%= link_to 'Edit', edit_dog_path(dog) %></td>
+      <td><%= link_to 'Destroy', dog_path(dog),
+      method: :delete,
+      data: { confirm: 'Are you sure?' } %></td>
     </tr>
   <% end %>
 <%= link_to 'Add a breed', new_dog_path %>
